@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <div class="contenedor"><center>
+        <div class="pantalla">
+            <div><p id="letraGrande" class=" linea"></p></div>
+            <div><p id="letraPequenia"></p></div>
+        </div>
+            <button class="borrar" onclick="borrar()">
+                <span class="material-symbols-outlined">
+                    backspace
+                </span> 
+            </button>
+        <div class="botones">
+            <div class="primerGrupo">
+                <button class="doble C" onclick="c()">C</button>
+                <button class="signo" onclick="signoPromedio()">%</button>
+                <button class="signo" onclick="signoDivicion()">÷</button>
+            </div>
+            <div class="segundoGrupo">
+                <button class="num" onclick="siete()">7</button>
+                <button class="num" onclick="ocho()">8</button>
+                <button class="num" onclick="nueve()">9</button>
+                <button class="signo" onclick="signoMultiplicacion()">x</button>
+            </div>
+            <div class="tercerGrupo">
+                <button class="num" onclick="cuatro()">4</button>
+                <button class="num" onclick="cinco()">5</button>
+                <button class="num" onclick="seis()">6</button>
+                <button class="signo" onclick="signoResta()">-</button>
+            </div>
+            <div class="cuartoGrupo">
+                <button class="num" onclick="uno()">1</button>
+                <button class="num" onclick="dos()">2</button>
+                <button class="num" onclick="tres()">3</button>
+                <button class="signo" onclick="signoSuma()">+</button>
+            </div>
+            <div class="quintoGrupo">
+                <button class="num" onclick="cero()">0</button>
+                <button onclick="punto()">.</button>
+                <button class="signo" onclick="procedimiento()">=</button>
+            </div>
+        </div>
+    </center></div>
+</body>
+</html>
