@@ -1,3 +1,5 @@
+//////////////borrado/////////////////////
+
 function c() {
     let salida = document.getElementById("letraGrande");
     salida.innerHTML = " ";
@@ -6,9 +8,17 @@ function c() {
 }
 
 function borrar() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML = " ";
-}
+    let salida = document.getElementById("letraGrande").innerHTML;
+    let arrSalida = [...salida]
+    let a = arrSalida.pop();
+    // let stiSalida = arrSalida.toString();
+    // let nuevaSalida = stiSalida.replace(/,/g, "");
+    arrSalida = arrSalida.toString().replace(/,/g, "");
+    
+    document.getElementById("letraGrande").innerHTML = arrSalida;
+} 
+
+//////////numeros////////////////
 
 function uno() {
     let salida = document.getElementById("letraGrande");
@@ -64,6 +74,8 @@ function punto() {
     let salida = document.getElementById("letraGrande");
     salida.innerHTML += ".";
 }
+
+///////////signo//////////////
 
 function signoSuma() {
     let salida = document.getElementById("letraGrande");
@@ -131,13 +143,35 @@ function multiplicar() {
     return num1 * num2
 }
 
+function dividir() {
+    let salida = document.getElementById("letraGrande").innerHTML;
+    let a = 0;
+    let b = salida.indexOf("÷");
+    let num1sti = salida.slice(a, b);
+    let num1 = parseFloat(num1sti);
+    let c = salida.indexOf("÷");
+    let d = salida.length;
+    let num2sti = salida.slice(c + 1, d);
+    let num2 = parseFloat(num2sti);
+    return num1 / num2
+}
+
+function porciento() {
+    let salida = document.getElementById("letraGrande").innerHTML;
+    let a = 0;
+    let b = salida.indexOf("%");
+    let num1sti = salida.slice(a, b);
+    let num1 = parseFloat(num1sti);
+    return (num1 / 100)
+}
+
 ///////////////resultado////////////
 
 function procedimiento() {
     let salida = document.getElementById("letraGrande").innerHTML;
 
 console.log(salida);
-    let resultado;
+    let resultado = "";
     if (salida.includes("+") == true) {
         resultado = sumar()
     } 
@@ -147,29 +181,14 @@ console.log(salida);
     if (salida.includes("x") == true) {
         resultado = multiplicar()
     } 
+    if (salida.includes("÷") == true) {
+        resultado = dividir()
+    } 
+    if (salida.includes("%") == true) {
+        resultado = porciento()
+    } 
 
 console.log(resultado);
     document.getElementById("letraPequenia").innerHTML = resultado;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const dividir = function (num1, num2) {
-    return num1 / num2
-}
-
-const porciento = function (num1) {
-    return (num1 / 100)
-}
