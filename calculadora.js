@@ -104,91 +104,125 @@ function signoPromedio() {
 
 //////////////procedimientos//////////////////
 
-function sumar() {
-    let salida = document.getElementById("letraGrande").innerHTML;
-    let a = 0;
-    let b = salida.indexOf("+");
-    let num1sti = salida.slice(a, b);
-    let num1 = parseFloat(num1sti);
-    let c = salida.indexOf("+");
-    let d = salida.length;
-    let num2sti = salida.slice(c + 1, d);
-    let num2 = parseFloat(num2sti);
-    return num1 + num2
-}
+// function sumar() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+//     let a = 0;
+//     let b = salida.indexOf("+");
+//     let num1sti = salida.slice(a, b);
+//     let num1 = parseFloat(num1sti);
+//     let c = salida.indexOf("+");
+//     let d = salida.length;
+//     let num2sti = salida.slice(c + 1, d);
+//     let num2 = parseFloat(num2sti);
+//     return num1 + num2
+// }
 
-function restar() {
-    let salida = document.getElementById("letraGrande").innerHTML;
-    let a = 0;
-    let b = salida.indexOf("-");
-    let num1sti = salida.slice(a, b);
-    let num1 = parseFloat(num1sti);
-    let c = salida.indexOf("-");
-    let d = salida.length;
-    let num2sti = salida.slice(c + 1, d);
-    let num2 = parseFloat(num2sti);
-    return num1 - num2
-}
+// function restar() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+//     let a = 0;
+//     let b = salida.indexOf("-");
+//     let num1sti = salida.slice(a, b);
+//     let num1 = parseFloat(num1sti);
+//     let c = salida.indexOf("-");
+//     let d = salida.length;
+//     let num2sti = salida.slice(c + 1, d);
+//     let num2 = parseFloat(num2sti);
+//     return num1 - num2
+// }
 
-function multiplicar() {
-    let salida = document.getElementById("letraGrande").innerHTML;
-    let a = 0;
-    let b = salida.indexOf("x");
-    let num1sti = salida.slice(a, b);
-    let num1 = parseFloat(num1sti);
-    let c = salida.indexOf("x");
-    let d = salida.length;
-    let num2sti = salida.slice(c + 1, d);
-    let num2 = parseFloat(num2sti);
-    return num1 * num2
-}
+// function multiplicar() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+//     let a = 0;
+//     let b = salida.indexOf("x");
+//     let num1sti = salida.slice(a, b);
+//     let num1 = parseFloat(num1sti);
+//     let c = salida.indexOf("x");
+//     let d = salida.length;
+//     let num2sti = salida.slice(c + 1, d);
+//     let num2 = parseFloat(num2sti);
+//     return num1 * num2
+// }
 
-function dividir() {
-    let salida = document.getElementById("letraGrande").innerHTML;
-    let a = 0;
-    let b = salida.indexOf("÷");
-    let num1sti = salida.slice(a, b);
-    let num1 = parseFloat(num1sti);
-    let c = salida.indexOf("÷");
-    let d = salida.length;
-    let num2sti = salida.slice(c + 1, d);
-    let num2 = parseFloat(num2sti);
-    return num1 / num2
-}
+// function dividir() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+//     let a = 0;
+//     let b = salida.indexOf("÷");
+//     let num1sti = salida.slice(a, b);
+//     let num1 = parseFloat(num1sti);
+//     let c = salida.indexOf("÷");
+//     let d = salida.length;
+//     let num2sti = salida.slice(c + 1, d);
+//     let num2 = parseFloat(num2sti);
+//     return num1 / num2
+// }
 
-function porciento() {
-    let salida = document.getElementById("letraGrande").innerHTML;
-    let a = 0;
-    let b = salida.indexOf("%");
-    let num1sti = salida.slice(a, b);
-    let num1 = parseFloat(num1sti);
-    return (num1 / 100)
-}
+// function porciento() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+//     let a = 0;
+//     let b = salida.indexOf("%");
+//     let num1sti = salida.slice(a, b);
+//     let num1 = parseFloat(num1sti);
+//     return (num1 / 100)
+// }
 
-///////////////resultado////////////
+// ///////////////resultado////////////
+
+// function procedimiento() {
+//     let salida = document.getElementById("letraGrande").innerHTML;
+
+// console.log(salida);
+//     let resultado = "";
+//     if (salida.includes("+") == true) {
+//         resultado = sumar()
+//     } 
+//     if (salida.includes("-") == true) {
+//         resultado = restar()
+//     } 
+//     if (salida.includes("x") == true) {
+//         resultado = multiplicar()
+//     } 
+//     if (salida.includes("÷") == true) {
+//         resultado = dividir()
+//     } 
+//     if (salida.includes("%") == true) {
+//         resultado = porciento()
+//     } 
+
+// console.log(resultado);
+//     document.getElementById("letraPequenia").innerHTML = resultado;
+// }
+
+// Resultado 2 ///////////////// Ahora se pueden hacer mas de 1 procedimiento a la vez
+
+const signos = ["+", "-", "x", "÷"];
 
 function procedimiento() {
-    let salida = document.getElementById("letraGrande").innerHTML;
+    let salida = document.getElementById("letraGrande").innerHTML;  
 
-console.log(salida);
-    let resultado = "";
-    if (salida.includes("+") == true) {
-        resultado = sumar()
-    } 
-    if (salida.includes("-") == true) {
-        resultado = restar()
-    } 
-    if (salida.includes("x") == true) {
-        resultado = multiplicar()
-    } 
-    if (salida.includes("÷") == true) {
-        resultado = dividir()
-    } 
-    if (salida.includes("%") == true) {
-        resultado = porciento()
-    } 
+    let numsStr = salida.split(/[+÷-]|x/);
+    let nums = numsStr.map(Number);
 
-console.log(resultado);
+    let a = [...salida];
+    let filSigno = a.filter(b => signos.includes(b));
+    
+    let resultado = nums[0];
+
+    for (let i = 1; nums.length > i; i++) {
+        let usoSigno = filSigno[i - 1];
+        switch (usoSigno) {
+            case "+":
+                resultado = resultado + nums[i];
+                break;
+            case "-":
+                resultado = resultado - nums[i];
+                break;
+            case "x":
+                resultado = resultado * nums[i];
+                break;
+            case "÷":
+                resultado = resultado / nums[i];
+                break;
+        }
+    }
     document.getElementById("letraPequenia").innerHTML = resultado;
 }
-
