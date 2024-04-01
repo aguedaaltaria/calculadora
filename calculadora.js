@@ -20,55 +20,69 @@ function borrar() {
 
 //////////numeros////////////////
 
-function uno() {
+function numeros(value) {
     let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "1";
+    salida.innerHTML += value;
+    // salida.style.color = "negro";
 }
 
-function dos() {
+function signoEscrito(value) {
     let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "2";
+    salida.innerHTML += value;
+    // salida.style.color = "#7c6897"
 }
 
-function tres() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "3";
-}
+/////////Numero antiguos/////////
 
-function cuatro() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "4";
-}
+// function uno() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "1";
+// }
 
-function cinco() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "5";
-}
+// function dos() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "2";
+// }
 
-function seis() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "6";
-}
+// function tres() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "3";
+// }
 
-function siete() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "7";
-}
+// function cuatro() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "4";
+// }
 
-function ocho() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "8";
-}
+// function cinco() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "5";
+// }
 
-function nueve() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "9";
-}
+// function seis() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "6";
+// }
 
-function cero() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "0";
-}
+// function siete() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "7";
+// }
+
+// function ocho() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "8";
+// }
+
+// function nueve() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "9";
+// }
+
+// function cero() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "0";
+// }
 
 function punto() {
     let salida = document.getElementById("letraGrande");
@@ -77,25 +91,25 @@ function punto() {
 
 ///////////signo//////////////
 
-function signoSuma() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "+";
-}
+// function signoSuma() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "+";
+// }
 
-function signoResta() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "-";
-}
+// function signoResta() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "-";
+// }
 
-function signoMultiplicacion() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "x";
-}
+// function signoMultiplicacion() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "x";
+// }
 
-function signoDivicion() {
-    let salida = document.getElementById("letraGrande");
-    salida.innerHTML += "÷";
-}
+// function signoDivicion() {
+//     let salida = document.getElementById("letraGrande");
+//     salida.innerHTML += "÷";
+// }
 
 function signoPromedio() {
     let salida = document.getElementById("letraGrande");
